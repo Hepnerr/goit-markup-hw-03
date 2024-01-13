@@ -24,6 +24,18 @@ p {
   padding: 0;
   margin: 0;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 img {
   display: block;
   max-width: 1005;
@@ -47,7 +59,6 @@ img {
 .header-navigation {
   display: flex;
   align-items: center;
-  gap: 76px;
 }
 .header-studio {
   color: #2e2f42;
@@ -64,6 +75,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: flex;
+  margin-right: 76px;
 }
 .header-list {
   display: flex;
@@ -77,6 +89,7 @@ img {
 }
 .header-items-link {
   color: #2e2f42;
+  padding: 24px 0;
 
   font-size: 16px;
   font-weight: 500;
@@ -111,10 +124,11 @@ img {
 }
 .business {
   background: #2e2f42;
+  padding: 188px 0;
 }
 .business-title {
   color: #ffffff;
-  width: 496px;
+  max-width: 496px;
   text-align: center;
   font-size: 56px;
   font-weight: 700;
@@ -137,6 +151,7 @@ img {
   margin: 0 auto;
   margin-top: 48px;
   border: none;
+  min-width: 169px;
 }
 .business-button:hover {
   background-color: #404bbf;
@@ -153,7 +168,7 @@ img {
   gap: 24px;
 }
 .benifits-items {
-  width: calc ((100% - 24 * 3) / 4);
+  width: calc((100% - 72px) / 4);
 }
 .benifits-subtitle {
   color: #2e2f42;
@@ -161,13 +176,13 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .benifits-text {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 8px;
 }
 .team {
   background-color: #f4f4fd;
@@ -180,18 +195,18 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
-  margin-top: 72px;
   gap: 24px;
 }
 .team-items {
   background-color: #ffffff;
   width: calc((100% - 24 * 3) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-descr {
-  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -204,6 +219,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
 }
 .team-text {
   color: #434455;
@@ -212,11 +228,9 @@ img {
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  margin-top: 8px;
 }
 .portfolio-list {
   display: flex;
-  margin-top: 71px;
   justify-content: center;
   flex-wrap: wrap;
   gap: 48px 24px;
@@ -229,11 +243,12 @@ img {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
 }
 .portfolio-descr {
   border: 1px solid #e7e9fc;
   border-top: none;
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 .portfolio-subtitle {
   color: #2e2f42;
@@ -241,13 +256,13 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .portfolio-text {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 8px;
 }
 .footer {
   background: #2e2f42;
@@ -261,11 +276,12 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-text {
   color: #f4f4fd;
   width: 264px;
-  margin-top: 18px;
 
   font-size: 16px;
   line-height: 1.5;
